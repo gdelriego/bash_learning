@@ -9,7 +9,7 @@ scrabble_score() {
     local eight_point=("J" "X")
     local ten_point=("Q" "Z")
 
-    local args=$(echo "$1" | tr '[:lower:]' '[:upper:]')  # Convertir a mayúsculas
+    local args=$(echo "$1" | tr '[:lower:]' '[:upper:]')
     local score=0
     for (( i=0; i<${#args}; i++ )); do
         local char="${args:i:1}"
